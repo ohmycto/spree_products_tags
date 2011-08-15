@@ -1,0 +1,12 @@
+ru:
+  activerecord:
+    attributes:
+      product_tag:
+        name: "Название метки"
+      product:
+        tag: "Метка"
+  
+  product_tags: "Метки товаров"
+  product_tags_desc: "Управление метками товаров"
+  new_product_tag: "Новая метка"
+  editing_product_tag: "Редактирование метки"

@@ -1,0 +1,9 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<h1><%= t('new_product_tag') %></h1>
+<%= render "shared/error_messages", :target => @product_tag %>
+
+<%= form_for :product_tag, :url => collection_url, :html => {:multipart => true} do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+  <%= render :partial => "admin/shared/new_resource_links" %>
+<% end %>

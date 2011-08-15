@@ -1,0 +1,35 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<div class='toolbar'>
+  <ul class='actions'>
+    <li>
+      <%= button_link_to t('new_product_tag'), new_object_url, :icon => 'add'  %>
+    </li>
+  </ul>
+  <br class='clear' />
+</div>
+
+<h1><%= t('product_tags') %></h1>
+
+<table class="index">
+  <thead>
+    <tr>
+      <th><%= t('name') %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @product_tags.each do |tag| %>
+      <tr id="<%= dom_id tag %>">
+        <td><%= tag.name %></td>
+        <td class="actions">
+          <%= link_to_edit tag %>&nbsp;
+          <%= link_to_delete tag %>
+        </td>
+      </tr>
+    <% end %>
+    <% if @product_tags.empty? %>
+      <tr><td colspan="3"><%= t(:none) %></td></tr>
+    <% end %>
+  </tbody>
+</table>

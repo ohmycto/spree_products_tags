@@ -1,0 +1,8 @@
+<%= f.field_container :name do %>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  <%= error_message_on :product_tag, :name %>
+<% end %>
+
+<%= f.label :icon, t(:icon) %><br />
+<%= f.file_field :icon %>

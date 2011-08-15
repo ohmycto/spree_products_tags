@@ -1,0 +1,3 @@
+<% unless product.product_tag.nil? %>
+  <%= image_tag product.product_tag.icon.url unless product.product_tag.icon_file_size.nil? %>
+<% end %>
