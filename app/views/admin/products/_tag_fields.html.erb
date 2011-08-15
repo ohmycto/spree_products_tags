@@ -1,2 +1,4 @@
-<%= f.label :tag %><br />
-<%= f.select :product_tag_id, ProductTag.all.collect { |pt| [pt.name, pt.id] }, { :include_blank => true } %>
+<p>
+  <%= f.label :tag %><br />
+  <%= f.select :product_tag_id, ProductTag.all.collect { |pt| [pt.name, pt.id] }, { :include_blank => true } %>
+</p>

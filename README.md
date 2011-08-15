@@ -1,13 +1,24 @@
-SpreeProductsTags
+Spree Products Tags
 =================
 
-Introduction goes here.
+Расширение добавляет задание меток товарам в виде изображений.
 
 
-Example
-=======
+Установка
+==============
+	
+Gemfile:  
+`gem 'spree_products_tags', :git => 'git://github.com/secoint/spree_products_tags.git'`
 
-Example goes here.
 
+    bundle install
+    rake spree_products_tags:install:migrations
+    rake db:migrate
 
-Copyright (c) 2011 [name of extension creator], released under the New BSD License
+Использование
+==============
+
+Управление метками осуществляется в разделе Админ - Конфигурация - Метки товаров.
+Каждый товар может иметь 1 метку, которая задается в форме редактирования товара.
+
+Copyright (c) 2011 Pavel Belyakov, Service & Consulting (http://secoint.ru)
